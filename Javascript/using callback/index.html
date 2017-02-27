@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function h3_handlers(){
+            $(".alert").click(function(){
+                alert("you clicked me")
+            })
+        }
+
+        $(document).ready(function(){
+            h3_handlers()
+            $(".new_button").click(function(){
+                $("body").append("<button class=\"alert\">Alert</button>")
+                h3_handlers()
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <button class="alert">Alert</button>
+    <button class="new_button">Add more button</button>
+
+</body>
+</html>

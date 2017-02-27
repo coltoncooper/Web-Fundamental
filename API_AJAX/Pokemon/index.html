@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function(){
+            for(var i=1; i<=151; i++){
+                var url = "http://pokeapi.co/api/v2/pokemon/" + i +"/";
+                $.get(url, function(data){
+                    var pokemon_forms = data.forms[0].url;
+                    $.get(pokemon_forms, function(pokemon_data){
+                        var pokemon_image = pokemon_data.sprites.front_default;
+                        var img_tag = "<img src=" + pokemon_image + ">"
+                        console.log(img_tag)
+                        $("#pokemon").append(img_tag)
+
+
+                    }, "json")
+
+                }, "json")
+            }
+
+
+        })
+
+    </script>
+
+</head
+<body>
+    <div id="pokemon">
+
+    </div>
+
+</body>
+</html>

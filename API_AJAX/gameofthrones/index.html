@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Thrones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+
+        h1{
+            margin: 10px 0px 10px 300px;
+        }
+        .housebox{
+            display= inline-block;
+        }
+
+        img{
+            width:200px;
+            height:200px;
+        }
+
+        #house_detail{
+            width:400px;
+            height:200px;
+            border: 3px solid black;
+            margin:50px 0px 0px 200px;
+            padding: 10px 0px 0px 10px;
+
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                var houseid = ($(this).attr("id"));
+                var apiUrl="";
+                if( houseid == "stark"){
+                    apiUrl = "http://anapioficeandfire.com/api/houses/362"
+                }else if(houseid == "targaryen"){
+                    apiUrl = "http://anapioficeandfire.com/api/houses/378"
+                }else if(houseid == "lannister"){
+                    apiUrl = "http://anapioficeandfire.com/api/houses/229"
+                }else{
+                    apiUrl = "http://anapioficeandfire.com/api/houses/17"
+                }
+                $.get(apiUrl, function(res){
+                    var name = res.name;
+                    var words = res.words;
+                    var titles = res.titles;
+
+                    $("#name").text(name);
+                    $("#words").text(words);
+                    $("#titles").text(titles);
+
+                }, "json")
+
+            })
+        })
+
+    </script>
+
+
+
+</head>
+<body>
+    <h1>Game of Thrones</h1>
+    <div id="houses">
+        <button id="stark"><img class="housebox" src="images/stark.jpg"></button>
+        <button id="targaryen"><img class="housebox" src="images/targaryen.jpg"></button>
+        <button id="lannister"><img class="housebox" src="images/lannister.jpg"></button>
+        <button id="baratheon"><img class="housebox" src="images/baratheon.png"></button>
+    </div>
+    <div id="house_detail">
+        <p>Name: <span id="name"></span></p>
+        <p>Words: <span id="words"></span></p>
+        <p>Titles: <span id="titles"></span></p>
+    </div>
+
+</body>
+</html>

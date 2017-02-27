@@ -1,0 +1,25 @@
+#wrapper{
+	width: 670px;
+	text-align:center;
+}
+.boxes{
+	display: inline;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.boxes button, .boxes p{
+	display: inline-block;
+}
+#image_show{
+	display:none;
+}
+#image_slidedown{
+	display:none;
+}
+#image_fadein{
+	display:none;
+}
+
+.red{
+	color:red;
+}

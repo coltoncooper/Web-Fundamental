@@ -1,0 +1,164 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#wrapper{
+	width: 930px;
+	background-color: #245076;
+	padding: 2px;
+}
+
+#header {
+	padding: 5px 10px 0 25px;
+}
+
+#logo img {
+	width: 350px;
+}
+#logo, #search {
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+}
+
+#search-list li:nth-child(2) {
+	border-right: 3px solid black;
+	padding-right: 5px;
+}
+
+.yellow {
+	color: gold;
+}
+
+#search-list li {
+	display: inline;
+}
+
+#search {
+	margin-left: 300px;
+}
+
+#search-form {
+	background-color: #444444;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#navigation1{
+	width: 800px;
+	height: 65px;
+	background-color: #3B78AD;
+	display:inline-block;
+	border-radius: 5px;
+	margin-left: 75px;
+	color: white;
+	font-size: 16pt;
+	text-align: center;
+}
+
+.navlist{
+	display:inline-block;
+	margin-top: 20px;
+	padding-right: 23px;
+}
+
+#navigation2{
+	margin: 30px 0px 0px 90px;
+	display:inline-block;
+	line-height: 20px;
+}
+
+.nav2{
+	color: white;
+	text-align: center;
+}
+
+#aboutpython{
+	display:inline-block;
+	vertical-align: top;
+	text-align: center;
+
+}
+
+.python{
+	width: 600px;
+	color: white;
+	font-size: 11pt;
+	padding: 20px 0px 0px 20px;
+}
+
+.quote{
+	color: gold;
+	text-align: center;
+	font-style: italic;
+	line-height: 30px;
+	font-size: 14pt;
+}
+
+.quote2{
+	color: white;
+	text-align: center;
+	font-size: 14pt;
+	line-height: 30px;
+}
+
+#pythonquote{
+	list-style-type: none;
+}
+
+#navigation2 li a{
+	color: white;
+}
+
+#content{
+	width: 970px;
+	background-color: white;
+	vertical-align: top;
+	padding-left: 125px;
+	margin-bottom: 20px;
+}
+
+#gettingstarted li a, p a{
+	color: #75A8D5;
+}
+
+#gettingstarted{
+	width: 300px;
+	margin-top: 15px;
+	text-align:center;
+	display:inline-block;
+	border-top: 2px solid blue;
+}
+
+#applications li a, p a{
+	color: #75A8D5;
+}
+
+#applications{
+	width: 300px;
+	margin-top: 15px;
+	display:inline-block;
+	text-align: center;
+	vertical-align: top;
+	border-top: 2px solid blue;
+	margin-left: 125px;
+}
+
+#footer{
+	width: 970px;
+	padding-top: 30px;
+}
+
+#footer li{
+	color: #85B7E4;
+	display:inline-block;
+	padding-left: 135px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#copyright{
+	text-align: center;
+	font-size: 7pt;
+	color: #85B7E4;
+}

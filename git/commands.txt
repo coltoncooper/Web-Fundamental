@@ -1,0 +1,20 @@
+Edwins-MacBook-Pro:desktop edwin146$ cd ..
+Edwins-MacBook-Pro:~ edwin146$ cd desktop
+Edwins-MacBook-Pro:desktop edwin146$ mkdir test
+Edwins-MacBook-Pro:desktop edwin146$ cd test
+Edwins-MacBook-Pro:test edwin146$ touch index.html
+Edwins-MacBook-Pro:test edwin146$ touch style.css
+Edwins-MacBook-Pro:test edwin146$ touch commands.txt
+Edwins-MacBook-Pro:test edwin146$ cp index.html index2.html
+Edwins-MacBook-Pro:test edwin146$ cd ..
+Edwins-MacBook-Pro:desktop edwin146$ mkdir destination
+Edwins-MacBook-Pro:desktop edwin146$ 
+Edwins-MacBook-Pro:desktop edwin146$ cd test
+Edwins-MacBook-Pro:test edwin146$ cd ..
+Edwins-MacBook-Pro:desktop edwin146$ mv /users/edwin146/desktop/test/index2.html /users/edwin146/desktop/destination/index2.html
+Edwins-MacBook-Pro:desktop edwin146$ cd test
+Edwins-MacBook-Pro:test edwin146$ rm style.css
+Edwins-MacBook-Pro:test edwin146$ ls
+commands.txt	
+Edwins-MacBook-Pro:test edwin146$ cd ..
+Edwins-MacBook-Pro:desktop edwin146$ cd destination

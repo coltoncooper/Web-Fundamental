@@ -1,0 +1,51 @@
+Edwins-MacBook-Pro:new_project edwin146$ cd ..
+Edwins-MacBook-Pro:desktop edwin146$ cd desktop
+-bash: cd: desktop: No such file or directory
+Edwins-MacBook-Pro:desktop edwin146$ mkdir test
+Edwins-MacBook-Pro:desktop edwin146$ cd test
+Edwins-MacBook-Pro:test edwin146$ touch index.html
+Edwins-MacBook-Pro:test edwin146$ touch styles.css
+Edwins-MacBook-Pro:test edwin146$ touch aboutMe.txt
+Edwins-MacBook-Pro:test edwin146$ git init
+Initialized empty Git repository in /Users/edwin146/Desktop/test/.git/
+Edwins-MacBook-Pro:test edwin146$ git add index.html
+Edwins-MacBook-Pro:test edwin146$ git add styles.css
+Edwins-MacBook-Pro:test edwin146$ git add aboutMe.txt
+Edwins-MacBook-Pro:test edwin146$ git commit -m "updated aboutMe"
+[master (root-commit) 3afa7fd] updated aboutMe
+ Committer: Edwin Haryanto <edwin146@Edwins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 aboutMe.txt
+Edwins-MacBook-Pro:test edwin146$ 
+Edwins-MacBook-Pro:test edwin146$ git add aboutMe.txt
+Edwins-MacBook-Pro:test edwin146$ git commit -m "added favorite moview to aboutMe"  
+[master 64389c4] added favorite moview to aboutMe
+ Committer: Edwin Haryanto <edwin146@Edwins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1 insertion(+)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+ 

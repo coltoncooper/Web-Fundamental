@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokedex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        #empty_pokedex{
+            width: 200px;
+            height: 300px;
+            float:right;
+            border: 5px solid red;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+
+        function clickHandler(){
+            $("img").click(function(){
+                alert("hello")
+
+
+            })
+        }
+
+
+        $(document).ready(function(){
+            clickHandler()
+
+            for(var i=1; i<=5; i++){
+                var url = "http://pokeapi.co/api/v2/pokemon/" + i +"/";
+                var pokemon_id = i
+                console.log(pokemon_id )
+                $.get(url, function(data){
+                    var pokemon_forms = data.forms[0].url;
+                    $.get(pokemon_forms, function(pokemon_data){
+                        var pokemon_image = pokemon_data.sprites.front_default;
+                        var img_tag = "<img id=\"" + pokemon_id + "\"" + "src=" + pokemon_image + ">"
+                        console.log(pokemon_id )
+                        $("#pokemon").append(img_tag)
+
+                        clickHandler()
+
+
+
+
+                    }, "json")
+
+                }, "json")
+            }
+
+
+        })
+
+
+    </script>
+
+</head
+<body>
+    <div id="pokemon">
+
+    </div>
+    <div id="empty_pokedex">
+
+    </div>
+
+</body>
+</html>

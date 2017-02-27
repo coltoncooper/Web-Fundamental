@@ -1,0 +1,150 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+#wrapper{
+	width: 960px;
+}
+.blue{
+	color: #457FAE;
+}
+.red{
+	color: red;
+}
+.bold{
+	font-style: bold;
+}
+#logo img{
+	width:100px;
+	height:100px;
+}
+#logo img, #logo h1{
+	display: inline-block;
+	vertical-align: middle;
+	font-size:40px;
+	margin-bottom: -20px;
+}
+#under_title{
+	background-color: #4B7EA7;
+	width: 960px;
+	height: 50px;
+	color: white;
+	font-size: 14px;
+}
+#under_title p{
+	padding: 10px 0px 5px 10px;
+	font-size: 26px;
+}
+#main_content{
+	background: linear-gradient(to bottom, #E4E4E4, white, white);
+	width: 960px;
+}
+#content_left{
+	width: 200px;
+	padding: 10px 0px 0px 10px;
+}
+
+#btn1{
+	width: 150px;
+	height: 25px;
+	border-radius: 5px;
+	background-color: #457FAE;
+	color: white;
+	margin-left: 25px;
+}
+#btn2{
+	width: 150px;
+	height: 25px;
+	border-radius: 5px;
+	background-color: #EB8B29;
+	color: white;
+	margin-left:25px;
+}
+hr{ 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.parent{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.image1{
+	width:200px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.image2{
+	width:100px;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+#reinvent{
+	position:absolute;
+	top: 10px;
+	left: 5px;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+#btn3{
+	width: 175px;
+	height: 25px;
+	border-radius: 5px;
+	background-color: #457FAE;
+	color: white;
+	position: absolute;
+	top: 250px;
+	left: 10px;
+}
+#content_left, #content_top{
+	display: inline-block;
+	vertical-align: top;
+}
+#content_top{
+	padding-left: 15px;
+	width: 730px;
+}
+.home{
+	width:20px;
+	margin-top: 5px;
+}
+#top_left, #top_right, #phone{
+	display: inline-block;
+	vertical-align: top;
+}
+#phone{
+	width: 40px;
+	padding-left: 420px
+}
+.clientserver{
+	width:300px;
+	margin-left:200px;
+}
+
+#content_bottom{
+	border: 3px solid aqua;
+	padding-top: 10px;
+	margin-top: 20px;
+}
+#htmlimage{
+	width:150px;
+}
+#bottom_text, #htmlimage{
+	display: inline-block;
+	vertical-align: top;
+}
+#bottom_text{
+	width:550px;
+	margin-left:20px;
+}
+
+

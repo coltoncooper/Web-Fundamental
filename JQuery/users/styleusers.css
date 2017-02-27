@@ -1,0 +1,19 @@
+#body{
+	width:350px;
+}
+#line{
+	border-bottom:2px solid black;
+	width: 350px;
+}
+
+form{
+	width: 350px;
+}
+
+.justify{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left:50px;
+	margin-right:50px;
+}
